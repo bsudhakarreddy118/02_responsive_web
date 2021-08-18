@@ -1,0 +1,59 @@
+body{
+    margin:0;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    height: 85vh;
+    width: 100vw;
+    border: 1px solid black;
+
+}
+
+.one{
+    background-color: red;
+}
+
+.two{
+    background-color: green;
+}
+
+.three{
+    background-color: blue;
+}
+
+@media (max-width: 576px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box{
+        font-size: medium;
+    }
+    .one{
+        height: 50vh;
+    }
+
+    .two{
+        height: 25vh;
+    }
+
+    .three{
+        height: 40vh;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
